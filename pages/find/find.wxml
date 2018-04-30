@@ -6,4 +6,29 @@
     </view>
     <navigator>搜索</navigator>
   </view>
+  <view class="content">
+    <text class="contentInfo">你读过0本，标注好看0本，一般0本\n想读0本，无感0本，未标注1164本\n</text>
+    <text>\n\n猜你喜欢：来自用户评价较高的图书</text>
+    <view class="book">
+      <text>三国演义</text>
+      <view style='width:100%;height:180px;margin-top:20px'>
+        <image src="../../img/index/81.jpg" style="width:100px;height:100%;"></image>
+        <view style='height:100%;'>
+          <text decode='{{true}}'>\n\n豆瓣评分&nbsp;9.4\n</text>
+          <image src="../../img/icon/star.png" style="width:100px;height:20px; margin-top:10px;margin-bottom:10px;"></image>
+          <text class="review">\n7594人评价</text>
+        </view>
+      </view>
+      <!-- <view class="chooseButton">
+        <text>已读</text>
+        <button>好看</button>
+        <button>一般</button>
+      </view>
+      <view class="chooseButton">
+        <text>未读</text>
+        <button>想读</button>
+        <button>无感</button>
+      </view> -->
+    </view>
+  </view>
 </scroll-view>

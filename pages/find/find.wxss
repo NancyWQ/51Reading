@@ -1,0 +1,50 @@
+.content{
+  padding-top:30px;
+  background: #F8F8F8;
+  width:100%;
+  border-top:1px solid #E6E5E8;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box
+}
+.content>.contentInfo{
+  font-size:16px;
+  font-weight: bold;
+  color:#000;
+  }
+.content>text{
+    font-size:15px;
+    color:#A2A2A2;
+  }
+.content>.book{
+  margin-top:20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.content>.book>text:nth-child(1){
+color:#FF8113;
+text-decoration: underline;
+font-size:18px;
+font-weight: bold;
+}
+.content>.book>view{
+  display: flex;
+  justify-content: space-around;
+}
+.content>.book>view>view>.review{
+  color:#9A9A9A;
+  font-weight: bold;
+  font-size:14px;
+}
+.chooseButton{
+  width:100%;
+  display: flex;
+  height:50px;
+}
+.chooseButton>text{
+  height: 100%;
+  text-align: center;
+  line-height: 100%;
+}
