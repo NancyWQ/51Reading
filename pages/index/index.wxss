@@ -1,0 +1,60 @@
+.content{
+  padding-top:10px;
+  background: #F8F8F8;
+  width:100%;
+  border-top:1px solid #E6E5E8;
+}
+.content .contentItem:nth-child(1){
+   border-top:1px solid #E6E5E8;
+}
+.contentItem{
+  width:100%;
+  background: #fff;
+  height:120px;
+  display: flex;
+  justify-content: center;
+}
+.contentItem>view{
+  width:90%;
+  height:90%;
+  border-bottom:1px solid #E8E8E8; 
+  padding-top:5%;
+  padding-bottom:5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between
+}
+.contentItem>view>image{
+  width:35%;
+  height:90%;
+}
+.contentItem>view>view{
+  width:60%;
+  height:90%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  position: relative;
+}
+ .contentItem>view>view>text{
+   font-size:16px;
+   color:#999999;
+   font-weight: bold;
+} 
+.contentItem>view>view>.title{
+  color:#000;
+}
+.contentItem>view>view>.passageDate{
+  position: absolute;
+  right: 0px;
+  bottom:0px;
+}
+ .contentPage{
+   margin-top:10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size:15px;
+  font-weight: bold;
+  color:#9F9F9F;
+} 

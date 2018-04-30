@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/find/find",
+    "pages/user/user"
+      ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "51读书",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "selectedColor": "red",
+    "color":"#000",
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "书单",
+      "iconPath":"img/icon/hambuer.png",
+      "selectedIconPath":"img/icon/hambuerSelected.png"
+    },
+    {
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath": "img/icon/find.png",
+      "selectedIconPath": "img/icon/findSelected.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我",
+      "iconPath": "img/icon/user.png",
+      "selectedIconPath": "img/icon/userSelected.png"
+    }]
+  }
+}

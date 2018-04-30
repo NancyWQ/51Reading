@@ -1,0 +1,9 @@
+<scroll-view scroll-y>
+  <view class="topInput">
+    <view>
+      <image src="../../img/icon/search.png"></image>
+      <input type="text" placeholder='搜索书单、书名、作者'></input>
+    </view>
+    <navigator>搜索</navigator>
+  </view>
+</scroll-view>

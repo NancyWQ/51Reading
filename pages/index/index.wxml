@@ -1,0 +1,69 @@
+<scroll-view scroll-y>
+  <view class="topInput">
+    <view>
+      <image src="../../img/icon/search.png"></image>
+      <input type="text" placeholder='搜索书单、书名、作者'></input>
+    </view>
+    <navigator>搜索</navigator>
+  </view>
+  <view class="content">
+    <view class="contentItem">
+      <view>
+        <image src="../../img/index/81.jpg"></image>
+        <view>
+          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
+          <text class="passageDate">01-10</text>
+        </view>
+      </view>
+    </view>
+    <view class="contentItem">
+      <view>
+        <image src="../../img/index/81.jpg"></image>
+        <view>
+          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
+          <text class="passageDate">01-10</text>
+        </view>
+      </view>
+    </view>
+     <view class="contentItem">
+      <view>
+        <image src="../../img/index/81.jpg"></image>
+        <view>
+          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
+          <text class="passageDate">01-10</text>
+        </view>
+      </view>
+    </view>
+     <view class="contentItem">
+      <view>
+        <image src="../../img/index/81.jpg"></image>
+        <view>
+          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
+          <text class="passageDate">01-10</text>
+        </view>
+      </view>
+    </view>
+     <view class="contentItem">
+      <view>
+        <image src="../../img/index/81.jpg"></image>
+        <view>
+          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
+          <text class="passageDate">01-10</text>
+        </view>
+      </view>
+    </view>
+     <view class="contentItem">
+      <view>
+        <image src="../../img/index/81.jpg"></image>
+        <view>
+          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
+          <text class="passageDate">01-10</text>
+        </view>
+      </view>
+    </view>
+    <view class="contentPage">
+      <text>共254个书单,第1/9页</text>
+    </view>
+    <button type="primary" style='width:60%;margin-top:20px;margin-bottom:10px;'>下一页</button>
+  </view>
+</scroll-view>
