@@ -19,16 +19,24 @@
           <text class="review">\n7594人评价</text>
         </view>
       </view>
-      <!-- <view class="chooseButton">
-        <text>已读</text>
-        <button>好看</button>
+       <view class="chooseButton">
+        <view>已读</view>
+        <button class="choose">好看</button>
         <button>一般</button>
       </view>
       <view class="chooseButton">
-        <text>未读</text>
-        <button>想读</button>
+        <view>未读</view>
+        <button class="choose">想读</button>
         <button>无感</button>
-      </view> -->
+      </view>
+      <text class="smallTitle">本书看点</text>
+    <text class="detailIntr">◎《三国演义》是根据三国时期的史实和民间传说创作而成的优秀历史小说，它的内容丰富多彩，为读者留下了深厚而多彩的认识价值</text>
+    <text class="detailIntr">◎《三国演义》是根据三国时期的史实和民间传说创作而成的优秀历史小说，它的内容丰富多彩，为读者留下了深厚而多彩的认识价值</text>
+    <text class="detailIntr">◎《三国演义》是根据三国时期的史实和民间传说创作而成的优秀历史小说，它的内容丰富多彩，为读者留下了深厚而多彩的认识价值</text>
+    <text class="smallTitle">内容简介</text>
+    <text class="detailIntr">《三国演义》是根据三国时期的史实和民间传说创作而成的优秀历史小说，它的内容丰富多彩，为读者留下了深厚而多彩的认识价值</text>
+    <text class="smallTitle">作者简介</text>
+    <text class="detailIntr">《三国演义》是根据三国时期的史实和民间传说创作而成的优秀历史小说，它的内容丰富多彩，为读者留下了深厚而多彩的认识价值</text>
     </view>
   </view>
 </scroll-view>
