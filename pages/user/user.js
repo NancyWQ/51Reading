@@ -1,4 +1,5 @@
-const app=getApp();
+const app = getApp()
+
 Page({
 
   /**
@@ -6,20 +7,27 @@ Page({
    */
   data: {
     userInfo:{},
+    title: [{ "id":1, "content": "我想读的书" }, { "id":2, "content": "我觉得好看的书" }, { "id":3, "content": "我的反馈建议" }, { "id":4, "content": "关于51读书" }]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    if(app.globalData.userInfo==null){
     wx.getUserInfo({
      success:(res)=>{
        this.setData({
          userInfo: res.userInfo,
        })
-      console.log(this.data.userInfo);
+       console.log(this.data.userInfo);
      } 
     })
+    }else{
+      this.setData({
+        userInfo: app.globalData.userInfo
+      })
+    }
   },
 
   /**
@@ -33,7 +41,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log('onshow');
    
   },
 
@@ -70,5 +77,10 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+  navigator:function(num){
+    switch(num){
+      
+    }
   }
 })

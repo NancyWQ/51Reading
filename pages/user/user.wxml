@@ -1,1 +1,12 @@
-<view>这是用户页</view>
+<scroll-view scroll-y>
+<view class="top">
+<image src="{{userInfo.avatarUrl}}"></image>
+<text>{{userInfo.nickName}}</text>
+</view>
+<block wx:for="{{title}}" wx:key="{{index}}">
+<view class="userItem" bindtap='navigator(item.content)'>
+<text>{{item.content}}</text>
+<text class="row">></text>
+</view>
+</block>
+</scroll-view>
