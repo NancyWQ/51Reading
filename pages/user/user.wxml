@@ -4,7 +4,7 @@
 <text>{{userInfo.nickName}}</text>
 </view>
 <block wx:for="{{title}}" wx:key="{{index}}">
-<view class="userItem" bindtap='navigator(item.content)'>
+<view class="userItem" bindtap='navigator' id="{{index}}">
 <text>{{item.content}}</text>
 <text class="row">></text>
 </view>

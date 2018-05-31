@@ -1,40 +1,36 @@
-const app = getApp()
-
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo:{},
-    title: [{ "id":1, "content": "我想读的书" }, { "id":2, "content": "我觉得好看的书" }, { "id":3, "content": "我的反馈建议" }, { "id":4, "content": "关于51读书" }]
+    id:null,
+    info:"测试"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if(app.globalData.userInfo==null){
-    wx.getUserInfo({
-     success:(res)=>{
-       this.setData({
-         userInfo: res.userInfo,
-       })
-       console.log(this.data.userInfo);
-     } 
+    this.setData({
+      id: options.id
     })
-    }else{
-      this.setData({
-        userInfo: app.globalData.userInfo
-      })
+    if (this.data.id != null) {
+      this.data.id == 0 && this.setData({info: "我想读的书"})
+      this.data.id == 1 && this.setData({ info: "我觉得好看的书" })
+      this.data.id == 2 && this.setData({ info: "我的反馈建议" })
+      this.data.id == 3 && this.setData({ info: "关于51读书" })
     }
+    wx.setNavigationBarTitle({
+      title: this.data.info//页面标题为路由参数
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-   
+    
   },
 
   /**
@@ -77,12 +73,5 @@ Page({
    */
   onShareAppMessage: function () {
     
-  },
-  navigator:function(event){
-    // 跳转最好不要用下面导航中的页面
-    // switch (event.currentTarget.id){
-      wx.navigateTo({
-        url: '../userInfo/userInfo?id='+event.currentTarget.id,
-    })
   }
 })
