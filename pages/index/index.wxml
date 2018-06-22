@@ -7,63 +7,20 @@
     <navigator>搜索</navigator>
   </view>
   <view class="content">
-    <view class="contentItem">
-      <view>
-        <image src="../../img/index/81.jpg"></image>
-        <view>
-          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
-          <text class="passageDate">01-10</text>
-        </view>
-      </view>
-    </view>
-    <view class="contentItem">
-      <view>
-        <image src="../../img/index/81.jpg"></image>
-        <view>
-          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
-          <text class="passageDate">01-10</text>
-        </view>
-      </view>
-    </view>
+    <block wx:for="{{indexPopular.content}}" wx:key="index">
      <view class="contentItem">
       <view>
-        <image src="../../img/index/81.jpg"></image>
+        <image src="{{item.img}}"></image>
         <view>
-          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
-          <text class="passageDate">01-10</text>
+          <text class="title">{{item.title}}</text>
+          <text class="passageDate">{{item.date}}</text>
         </view>
       </view>
     </view>
-     <view class="contentItem">
-      <view>
-        <image src="../../img/index/81.jpg"></image>
-        <view>
-          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
-          <text class="passageDate">01-10</text>
-        </view>
-      </view>
-    </view>
-     <view class="contentItem">
-      <view>
-        <image src="../../img/index/81.jpg"></image>
-        <view>
-          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
-          <text class="passageDate">01-10</text>
-        </view>
-      </view>
-    </view>
-     <view class="contentItem">
-      <view>
-        <image src="../../img/index/81.jpg"></image>
-        <view>
-          <text class="title">这九本书,帮你掌控情绪,变得平静</text>
-          <text class="passageDate">01-10</text>
-        </view>
-      </view>
-    </view>
+    </block>
     <view class="contentPage">
-      <text>共254个书单,第1/9页</text>
+      <text>共{{indexPopular.total}}个书单,第{{indexPopular.pageNow}}/{{indexPopular.pageCount}}页</text>
     </view>
-    <button type="primary" style='width:60%;margin-top:20px;margin-bottom:10px;'>下一页</button>
+    <button type="primary" style='width:60%;margin-top:20px;margin-bottom:10px;' bindtap='nextPage'>下一页</button>
   </view>
 </scroll-view>
